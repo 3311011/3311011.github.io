@@ -14,7 +14,8 @@ a:hover {
 	
 }
 /*  */
-div p a {
+ a:visited {
+	color:black;
 
 }
 h1 {
@@ -42,7 +43,7 @@ h1 {
 div {
 	text-align: center;
 	width: 80%;
-	background-color: beige;
+	/* background-color: beige; */
 	margin: auto;
 }
 .form {
@@ -61,7 +62,7 @@ div.zhouzhou {
 	text-align: center;
 	margin: auto;
 	width: 3rem 30% 3rem 30%;
-	background-color: beige;
-} */
+	/* background-color: beige; */
+} 
 
 
