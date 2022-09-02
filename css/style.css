@@ -1,23 +1,41 @@
-a:visited{
+a:visited {
 	color: black;
 	text-decoration-line: none;
 }
-a:hover{
+a:hover {
 	text-decoration-line: none;
 }
 
-h2{
+h2 {
 	text-align: "center";
 }
-.day1-anime{
+.day1-anime {
 	color: aqua;
 }
 
-img{
+img {
 	
 }
-.zhouzhou{
+.zhouzhou {
 	width: 300px; 
 	height: 350px;
 }
+p.title {
+	color: red;
+}
+p {
+	margin: auto;
+}
 
+h1 {
+	color: royalblue;
+}
+li.content {
+	width: 40vw;
+	height: auto;
+}
+.box1 {
+	margin-top:3000px;
+	background-color: bisque;
+	margin: auto;
+}
