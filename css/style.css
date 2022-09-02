@@ -1,8 +1,12 @@
+html{
+	font-size: 16px;
+}
 a:hover {
 	text-decoration-line: none;
 }
-
-/* div div  */
+ div div  {
+	width: auto;
+ }
 .zhouzhou {
 	width: 40%;
 	height: 40%;
@@ -37,11 +41,13 @@ h1 {
 
 div {
 	text-align: center;
-	/* margin: 0.625rem 0.625rem; */
 	width: 80%;
 	background-color: beige;
+	margin: auto;
 }
-
+.form {
+	text-align: center;
+}
 
 .contont {
 	color: #555555;
@@ -50,9 +56,12 @@ div {
 p.content {
 	font-size: 3.125rem;
 }
+
 div.zhouzhou {
 	text-align: center;
-	margin: 0.625rem 0.625rem;
-	width: 80%;
+	margin: auto;
+	width: 3rem 30% 3rem 30%;
 	background-color: beige;
-}
+} */
+
+
