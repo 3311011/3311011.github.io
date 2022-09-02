@@ -58,11 +58,10 @@ p.content {
 	font-size: 3.125rem;
 }
 
-div.zhouzhou {
-	text-align: center;
-	margin: auto;
-	width: 3rem 30% 3rem 30%;
-	/* background-color: beige; */
-} 
+div.xiaozhouzhou a img {
+	width: 15px;
+	height: 10px;
+
+}
 
 
