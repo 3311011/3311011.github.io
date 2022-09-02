@@ -2,14 +2,17 @@ a:hover {
 	text-decoration-line: none;
 }
 
+/* div div  */
 .zhouzhou {
-	margin: 0.5rem 3rem;
-	width: 40rem;
-	height: 40rem;
+	width: 40%;
+	height: 40%;
 	text-align: center;
+	
 }
+/*  */
+div p a {
 
-
+}
 h1 {
 	color: royalblue;
 	margin: auto;
@@ -34,8 +37,9 @@ h1 {
 
 div {
 	text-align: center;
-	margin: auto;
+	/* margin: 0.625rem 0.625rem; */
 	width: 80%;
+	background-color: beige;
 }
 
 
@@ -45,4 +49,10 @@ div {
 
 p.content {
 	font-size: 3.125rem;
+}
+div.zhouzhou {
+	text-align: center;
+	margin: 0.625rem 0.625rem;
+	width: 80%;
+	background-color: beige;
 }
