@@ -1,41 +1,48 @@
-a:visited {
-	color: black;
-	text-decoration-line: none;
-}
 a:hover {
 	text-decoration-line: none;
 }
 
-h2 {
-	text-align: "center";
-}
-.day1-anime {
-	color: aqua;
+.zhouzhou {
+	margin: 0.5rem 3rem;
+	width: 40rem;
+	height: 40rem;
+	text-align: center;
 }
 
-img {
-	
-}
-.zhouzhou {
-	width: 300px; 
-	height: 350px;
-}
-p.title {
-	color: red;
-}
-p {
-	margin: auto;
-}
 
 h1 {
 	color: royalblue;
+	margin: auto;
+	text-align: center;
 }
-li.content {
-	width: 40vw;
-	height: auto;
+.titile {
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .box1 {
 	margin-top:3000px;
 	background-color: bisque;
 	margin: auto;
+
+}
+
+/* .testbox {
+	border-radius: 84px;
+	background: linear-gradient(145deg, #8e6060, #a97272);
+	box-shadow:  10px 10px 20px #724d4d,
+             -10px -10px 20px #ca8989;
+} */
+
+div {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+}
+
+
+.contont {
+	color: #555555;
+}
+
+p.content {
+	font-size: 3.125rem;
 }
