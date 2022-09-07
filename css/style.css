@@ -1,3 +1,4 @@
+/* @import url(); */
 html{
 	font-size: 16px;
 }
@@ -59,9 +60,59 @@ p.content {
 }
 
 div.xiaozhouzhou a img {
-	width: 15px;
-	height: 10px;
+	height: 1px;
+	width: 1px;
+	border-top: 1px solid #666666;
+
 
 }
+div.xiaozhouzhou {
+	height: 3px;
+	overflow: hidden;
+	transition: 0.5s all;
+}
 
+/* .xiaozhouzhou .line {
+	border-top: 1px solid #666666;
+	width: 100%;
 
+} */
+/* 分割线 */
+/* .order {  
+
+	height: 20px;
+
+	line-height: 20px;
+  
+	text-align: center;
+}
+
+  
+.order .line {
+
+  display: inline-block;
+
+  padding-top : 3px;
+
+  width: 100%;
+
+  border-top: 1px solid #666666;
+
+} */
+/* 分割线 */
+
+.btn {
+	float: left;
+	padding: 0 10px;
+	font-size: 40px;
+	text-decoration: none;
+	color: #2c3e50;
+	font-family: Ionicons;
+	cursor: pointer;
+}
+.btn::before {
+	content: '\f20d';
+}
+.btnc::before {
+	content: '\f12a';
+}
