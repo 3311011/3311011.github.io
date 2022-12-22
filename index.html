@@ -10,26 +10,41 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-
-
+	<script src="js/moveBox.js"></script>
+ <style>
+      #box {  		/* 定义一个名为 "box" 的样式 */
+        width: 100px;  	 /* 设置方块的宽度为 100px */
+        height: 100px;  	/* 设置方块的高度为 100px */
+        background-color: red; 	  /* 设置方块的背景色为红色 */
+        position: absolute;  	/*  设置方块的定位方式为绝对定位 */
+      }
+    </style>
+	
 
 </head>
 
 <body>
+	
+    <button onclick="moveBox()">Move</button>  <!-- 在页面中创建一个按钮，并为其绑定点击事件 -->
+   <!-- 一个 div 元素，用于包含翻译后的文本 -->
+   <br><div id="translatedText"></div><br><div id="box"></div> 
+   
+   <script>
+     // 定义需要翻译的文本
+     const text = "The world is vast and wealth is scarce.";
+   
+     // 定义翻译后的文本
+     const translatedText = "世界很大，财富稀有。";
+   
+     // 将翻译后的文本添加到文档中
+     const translatedTextContainer = document.getElementById("translatedText");
+     translatedTextContainer.textContent = translatedText;
+   </script>
 
-    
-    <div>
-
-        <p class="content">Do you want to see ads and earn me money?</p>
-        
-    </div>
 <!--    <div>
 
         <button >
-            Yes
-        </button>
-        <button >
-            No
+		CHINESE
         </button>
     </div> -->
     <div>
@@ -49,68 +64,21 @@
             different.Please
             click this link.</p>
     </div>
-    <div >
-        <a href="page/day1-anime.html" target="_blank">to day1 </br>anime</a>
-        <a href="page/day2-.html">to day2-
-            <p></p>
-        </a>
-        <a href="page/day3-.html">to day3-
-            <p></p>
-        </a>
-        <a href="page/day4-.html">to day4-
-            <p></p>
-        </a>
-        <a href="page/day5-.html">to day5-
-            <p></p>
-        </a>
-        <a href="page/day6-.html">to day6-
-            <p></p>
-        </a>
-        <a href="page/day7-.html">to day7-
-            <p></p>
-        </a>
-        <a href="page/day8-.html">to day8-
-            <p></p>
-        </a>
-        <a href="page/day9-.html">to day9-
-            <p></p>
-        </a>
-        <a href="page/day10-.html">to day10-
-            <p></p>
-        </a>
-        <a href="page/day11-.html">to day11-
-            <p></p>
-        </a>
-        <a href="page/day12-.html">to day12-
-            <p></p>
-        </a>
-        <a href="page/day13-.html">to day13-
-            <p></p>  
-        </a>
-        <a href="page/day14-.html">to day14-
-            <p></p>
-        </a>
-        <a href="page/day15-.html">to day15-
-            <p></p>
-        </a>
-        <a href="page/day16-.html">to day16-
-            <p></p>
-        </a>
-        <a href="page/day17-.html">to day17-
-            <p></p>
-        </a>
-        <a href="page/day18-.html">to day18-
-            <p></p>
-        </a>
-        <a href="page/day19-.html">to day19-
-            <p></p>
-        </a>
-        <a href="page/day20-.html">to day20-
-            <p></p>
-        </a>
-        
-        
-
+	<div>
+	  <a href="page/day1-anime.html" target="_blank">to day1 
+	  </br>
+	  anime</a>
+	  <!-- 一个链接元素，指向另一个页面 -->
+	  <a href="page/day2-code.html">To day2-</a>
+	  <!-- 一个链接元素，指向另一个页面 -->
+	  <a href="page/day3-.html">To day3-</a>
+	  <!-- 一个链接元素，指向另一个页面 -->
+	  <a href="page/day4-.html">To day4-</a>
+	  <!-- 一个链接元素，指向另一个页面 -->
+	  <a href="page/day5-.html">To day5-</a>
+	  <!-- 一个链接元素，指向另一个页面 -->
+	  <a href="page/day6.html">To day6</a>       
+	  <a href="page/freeday.html">Free day!</a>
     </div>
 
         
@@ -120,8 +88,8 @@
     </div>
     <div class="xiaozhouzhou" >
 
-        <a href="/page/zhouzhou.html"  rel="noopener noreferrer">
-            <img src="/img/zhouzhou/a1.jpg" alt="h0fdffds59er.2*dfai" >
+        <a href="./page/zhouzhou.html"  rel="noopener noreferrer">
+            <img src="./img/zhouzhou/a1.jpg" alt="h0fdffds59er.2*dfai" >
                
             
         </a> 
@@ -154,36 +122,27 @@
     </div>
     
 
-    <div class="form">
-        <form action="/js/form.js" method="post">
-            <div>
-                <label>
-                    How old are you?
-                </label>
-                <input type="text" name="user_age" placeholder="Enter your age!">
-            </div>
-        </form>
-    </div>
-    <div class="form">
-        <form action="/js/form.js" method="post">
-            <div>
-                <label>
-                    Do you want give me some adfee?
-                </label>
-                <input type="text" name="user_age" placeholder="Enter your age!">
-            </div>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-    </div>
 
-    <div>
-        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Get some free picture.</a>
-    </div>
+	
 
 
-
-
-
+<script>
+  function checkForAdBlocker() {
+    var testAd = document.createElement('div'); // 创建一个 div 元素
+    testAd.innerHTML = '&nbsp;'; // 向 div 中添加内容
+    testAd.className = 'adsbox'; // 给 div 添加类名
+    document.body.appendChild(testAd); // 将 div 添加到页面中
+    window.setTimeout(function() { // 设置一个超时
+      if (testAd.offsetHeight === 0) { // 如果 div 的高度为 0，说明被屏蔽了
+        console.log('广告插件已启用');
+      } else { // 否则说明没有被屏蔽
+        console.log('广告插件未启用');
+      }
+      testAd.remove(); // 移除 div
+    }, 100); // 超时时间为 100 毫秒
+  }
+  checkForAdBlocker(); // 调用函数
+</script>
 
 
 
@@ -197,22 +156,6 @@
 
 
 </body>
-<script>
-  function checkForAdBlocker() {
-    var testAd = document.createElement('div');
-    testAd.innerHTML = '&nbsp;';
-    testAd.className = 'adsbox';
-    document.body.appendChild(testAd);
-    window.setTimeout(function() {
-      if (testAd.offsetHeight === 0) {
-        console.log('Ad blocker is enabled');
-      } else {
-        console.log('Ad blocker is disabled');
-      }
-      testAd.remove();
-    }, 100);
-  }
-  checkForAdBlocker();
-</script>
+
 
 </html>
